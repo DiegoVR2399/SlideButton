@@ -6,7 +6,7 @@
 ### dependencies:
     implementation 'com.github.DiegoVR2399:SlideButton:1.0'
     
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+<img src="https://octodex.github.com/images/yaktocat.png" />
 
 ### archivo xml:
     <slidebutton.com.pe.SlideButton
