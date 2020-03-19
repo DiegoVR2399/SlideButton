@@ -7,6 +7,7 @@
     implementation 'com.github.DiegoVR2399:SlideButton:1.0'
     
 <img height="400" src="https://i.imgur.com/V4dLw61.jpg?1" />
+<img height="400" src="https://i.imgur.com/V4dLw61.jpg?1" />
 
 ### archivo xml:
     <slidebutton.com.pe.SlideButton
