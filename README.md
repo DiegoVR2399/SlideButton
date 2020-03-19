@@ -12,7 +12,7 @@
             <img height="400" src="https://i.imgur.com/V4dLw61.jpg?1" />
         </td>
         <td>
-            <img src="4549.png" width="20px" height="30px"/>
+            <img height="400" src="https://i.imgur.com/V4dLw61.jpg?1" />
         </td>
     </tr>
 <table>
