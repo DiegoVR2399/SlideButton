@@ -6,6 +6,8 @@
     dependencies:
     implementation 'com.github.DiegoVR2399:SlideButton:1.0'
     
+    
+    
     archivo xml:
     <slidebutton.com.pe.SlideButton
         android:layout_marginTop="10dp"
