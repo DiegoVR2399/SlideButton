@@ -37,21 +37,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 ### Detalle:
-   **sb_src_desplasing** = Asigna imagen que se va desplazar.<br>
-   **sb_tint_icon_desplasing** = Tinte de la imagen que se va a desplazar.<br>
-   **sb_padding_desplasing** = Asigna el pading de la imagen a desplazar.<br>
-   **sb_background_tint_desplasing** = Asigna el pading de la imagen a desplazar.<br>
-   **sb_src_end** = Asigna imagen en la parte final derecho.<br>
-   **sb_tint_icon_end** = Tinte de la imagen en la parte final derecho.<br>
-   **sb_padding_end** = Asigna el pading de la imagen en la parte final derecho.<br>
-   **sb_background_tint_end** = Asigna un color de fondo de la imagen en la parte final derecho.<br>
-   **sb_text** = Asigna un texto en el centro.<br>
-   **sb_textColor** = Asigna un color al texto.<br>
-   **sb_textSize** = Asigna un tamaño de letra.<br>
-   **sb_radius_card**= Asigna un radio (borde) a las imagenes. (por defecto 17dp)<br>
-   **sb_width_height_card** = Asigna un ancho y alto de las imagenes. (por defecto 34dp)<br>
-   **sb_background_custom_slide_off** = Asigna un archivo customisado para cuando este en off.<br>
-   **sb_background_custom_slide_on** = Asigna un archivo customisado para cuando este en on.
+   ***sb_src_desplasing*** = Asigna imagen que se va desplazar.<br>
+   ***sb_tint_icon_desplasing*** = Tinte de la imagen que se va a desplazar.<br>
+   ***sb_padding_desplasing*** = Asigna el pading de la imagen a desplazar.<br>
+   ***sb_background_tint_desplasing*** = Asigna el pading de la imagen a desplazar.<br>
+   ***sb_src_end*** = Asigna imagen en la parte final derecho.<br>
+   ***sb_tint_icon_end*** = Tinte de la imagen en la parte final derecho.<br>
+   ***sb_padding_end*** = Asigna el pading de la imagen en la parte final derecho.<br>
+   ***sb_background_tint_end*** = Asigna un color de fondo de la imagen en la parte final derecho.<br>
+   ***sb_text*** = Asigna un texto en el centro.<br>
+   ***sb_textColor*** = Asigna un color al texto.<br>
+   ***sb_textSize*** = Asigna un tamaño de letra.<br>
+   ***sb_radius_card***= Asigna un radio (borde) a las imagenes. (por defecto 17dp)<br>
+   ***sb_width_height_card*** = Asigna un ancho y alto de las imagenes. (por defecto 34dp)<br>
+   ***sb_background_custom_slide_off*** = Asigna un archivo customisado para cuando este en off.<br>
+   ***sb_background_custom_slide_on*** = Asigna un archivo customisado para cuando este en on.
 
 ### Evento on y off:
 
