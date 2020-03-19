@@ -27,7 +27,7 @@
         app:sb_width_height_card="34dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    
+### Detalle:
     *sb_src_desplasing = Asigna imagen que se va desplazar.
     *sb_tint_icon_desplasing = Tinte de la imagen que se va a desplazar.
     *sb_padding_desplasing = Asigna el pading de la imagen a desplazar.
