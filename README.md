@@ -6,9 +6,17 @@
 ### dependencies:
     implementation 'com.github.DiegoVR2399:SlideButton:1.0'
     
-<img height="400" src="https://i.imgur.com/V4dLw61.jpg?1" />
-<img height="400" src="https://i.imgur.com/V4dLw61.jpg?1" />
-
+<table width="100%" border="0" cellpadding="2">
+    <tr>
+        <td>
+            <img height="400" src="https://i.imgur.com/V4dLw61.jpg?1" />
+        </td>
+        <td>
+            <img src="4549.png" width="20px" height="30px"/>
+        </td>
+    </tr>
+<table>
+    
 ### archivo xml:
     <slidebutton.com.pe.SlideButton
         android:layout_marginTop="10dp"
