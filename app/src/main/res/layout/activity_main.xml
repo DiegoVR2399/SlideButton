@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <slidebutton.com.pe.SlideButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/sb_id"
+        app:sb_src_desplasing="@android:drawable/ic_dialog_alert"
+        app:sb_tint_icon_desplasing="@android:color/background_light"
+        app:sb_padding_desplasing="7dp"
+        app:sb_src_end="@android:drawable/ic_delete"
+        app:sb_tint_icon_end="@android:color/background_light"
+        app:sb_padding_end="7dp"
+        app:sb_background_tint_end="@android:color/background_dark"
+        app:sb_background_tint_desplasing="@android:color/holo_orange_dark"
+        app:sb_text="Desliza para continuar"
+        app:sb_textColor="@android:color/background_light"
+        app:sb_textSize="3dp"
+        app:sb_radius_card="17dp"
+        app:sb_width_height_card="34dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Hello World!" />
+
+</RelativeLayout>

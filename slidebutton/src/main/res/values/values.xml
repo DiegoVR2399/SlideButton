@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlideButton">
+        <attr name="sb_text" format="string" />
+        <attr name="sb_textColor" format="color" />
+        <attr name="sb_textSize" format="dimension"/>
+        <attr name="sb_src_desplasing" format="reference"/>
+        <attr name="sb_src_end" format="reference"/>
+        <attr name="sb_background_custom_slide_on" format="reference"/>
+        <attr name="sb_background_custom_slide_off" format="reference"/>
+        <attr name="sb_padding_desplasing" format="dimension" />
+        <attr name="sb_padding_end" format="dimension" />
+        <attr name="sb_radius_card" format="dimension" />
+        <attr name="sb_width_height_card" format="dimension" />
+        <attr name="sb_tint_icon_desplasing" format="color" />
+        <attr name="sb_tint_icon_end" format="color" />
+        <attr name="sb_background_tint_end" format="color" />
+        <attr name="sb_background_tint_desplasing" format="color" />
+        <!--        <attr name="sb_tint_visible" format="boolean" />-->
+    </declare-styleable>
+</resources>
