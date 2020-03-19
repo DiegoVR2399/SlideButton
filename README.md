@@ -3,12 +3,12 @@
     build.gradel:
     repositories {maven { url 'https://jitpack.io' }}
    
-    dependencies:
+    ### dependencies:
     implementation 'com.github.DiegoVR2399:SlideButton:1.0'
     
     ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
     
-    archivo xml:
+    ### archivo xml:
     <slidebutton.com.pe.SlideButton
         android:layout_marginTop="10dp"
         android:id="@+id/sb_id"
