@@ -7,7 +7,7 @@
     implementation 'com.github.DiegoVR2399:SlideButton:1.0'
     
     <img height="240" src="https://dam.ngenespanol.com/wp-content/uploads/2019/03/luna-colores-nuevo-770x395.png" />
-    
+    ![header image](https://dam.ngenespanol.com/wp-content/uploads/2019/03/luna-colores-nuevo-770x395.png)
     archivo xml:
     <slidebutton.com.pe.SlideButton
         android:layout_marginTop="10dp"
