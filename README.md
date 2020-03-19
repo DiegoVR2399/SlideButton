@@ -45,3 +45,22 @@
     
     *sb_background_custom_slide_off = Asigna un archivo customisado para cuando este en off.
     *sb_background_custom_slide_on = Asigna un archivo customisado para cuando este en on.
+
+### Evento on y off:
+
+     sb_id.OnSetListenerSlideButton(new SlideButton.setListenerSlideButton() {
+            @Override
+            public void onButtonOff() {
+                Toast.makeText(MainActivity.this, "Off", Toast.LENGTH_SHORT).show();
+                sb_id.sb_setText("Desliza para encender"); //cambia el texto de acuerdo al evento
+                sb_id.sb_setTextColor(getResources().getColor(R.color.colorAccent)); //cambia el color del texto de acuerdo al evento
+            }
+
+            @Override
+            public void onButtonOn() {
+                Toast.makeText(MainActivity.this, "On", Toast.LENGTH_SHORT).show();
+                sb_id.sb_setText("Desliza para apagar"); //cambia el texto de acuerdo al evento
+                sb_id.sb_setTextColor(getResources().getColor(R.color.colorPrimaryDark)); //cambia el color del texto de acuerdo al evento
+            }
+        });
+
