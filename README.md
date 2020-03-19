@@ -2,11 +2,13 @@
 
     build.gradel:
     repositories {maven { url 'https://jitpack.io' }}
-    
+   
     dependencies:
     implementation 'com.github.DiegoVR2399:SlideButton:1.0'
     
-    ![Alt  description](https://dam.ngenespanol.com/wp-content/uploads/2019/03/luna-colores-nuevo-770x395.png)
+    <br>
+    <img src="https://dam.ngenespanol.com/wp-content/uploads/2019/03/luna-colores-nuevo-770x395.png" />
+    <br>
     
     archivo xml:
     <slidebutton.com.pe.SlideButton
