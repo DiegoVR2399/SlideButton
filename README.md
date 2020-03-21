@@ -40,7 +40,7 @@
    ***sb_src_desplasing*** = Asigna imagen que se va desplazar.<br>
    ***sb_tint_icon_desplasing*** = Tinte de la imagen que se va a desplazar.<br>
    ***sb_padding_desplasing*** = Asigna el pading de la imagen a desplazar.<br>
-   ***sb_background_tint_desplasing*** = Asigna el pading de la imagen a desplazar.<br>
+   ***sb_background_tint_desplasing*** = Asigna el color de fondo de la imagen a desplazar.<br>
    ***sb_src_end*** = Asigna imagen en la parte final derecho.<br>
    ***sb_tint_icon_end*** = Tinte de la imagen en la parte final derecho.<br>
    ***sb_padding_end*** = Asigna el pading de la imagen en la parte final derecho.<br>
