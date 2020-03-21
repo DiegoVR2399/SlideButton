@@ -50,8 +50,8 @@
    ***sb_textSize*** = Asigna un tamaño de letra.<br>
    ***sb_radius_card***= Asigna un radio (borde) a las imagenes. (por defecto 17dp)<br>
    ***sb_width_height_card*** = Asigna un ancho y alto de las imagenes. (por defecto 34dp)<br>
-   ***sb_background_custom_slide_off*** = Asigna un archivo customisado para cuando este en off.<br>
-   ***sb_background_custom_slide_on*** = Asigna un archivo customisado para cuando este en on.
+   ***sb_background_custom_slide_off*** = Asigna un archivo customizado para cuando este en off.<br>
+   ***sb_background_custom_slide_on*** = Asigna un archivo customizado para cuando este en on.
 
 ### Evento on y off:
 
