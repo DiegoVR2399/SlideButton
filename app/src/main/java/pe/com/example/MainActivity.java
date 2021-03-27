@@ -31,8 +31,18 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "On", Toast.LENGTH_SHORT).show();
                 sb_id.sb_setText("Desliza para apagar");
                 sb_id.sb_setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+
+                sb_id.setLockScrolling(true);
             }
         });
+
+        sb_id.setLockScrolling(false);
+
+        if (sb_id.isLockedScrolling()){
+            sb_id.sb_setText("locked");
+        }else{
+            sb_id.sb_setText("unlocked");
+        }
 
     }
 }

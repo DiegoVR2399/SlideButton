@@ -35,6 +35,8 @@ public class SlideButton extends RelativeLayout implements View.OnTouchListener 
     private float textSize = DEFAULT_TEXT_SIZE;
     private String text = "";
 
+    private boolean isChecked = false;
+    private boolean isLockedScrolling = false;
     private @DrawableRes
     int imgResDesplasing = 0;
     private @DrawableRes
@@ -321,6 +323,66 @@ public class SlideButton extends RelativeLayout implements View.OnTouchListener 
 
     public void sb_setTextColor(int color){
         textView.setTextColor(color);
+    }
+
+    public boolean isChecked() {
+        return isChecked;
+    }
+
+    public void setChecked(final boolean checked) {
+        final RelativeLayout.LayoutParams layoutParamsUp = (LayoutParams) cardView.getLayoutParams();
+        isChecked = checked;
+
+        relativeLayout.post(new Runnable() {
+            @Override
+            public void run() {
+                BTN_AVAILABILITY_WIDTH = relativeLayout.getWidth();
+
+                if (checked) {
+
+                    layoutParamsUp.leftMargin = BTN_AVAILABILITY_WIDTH - (int) Constants.convertDpiToPx(getContext(), ((int) Constants.convertPxToDpi(getContext(), width_height) + 6));
+                    relativeLayout.setBackground(getContext().getResources().getDrawable(background_custom_slide_on));
+
+                    if (listener != null) {
+                        if (count == 200) {
+
+                            listener.onButtonOn();
+                            count = 100;
+                        }
+                    }
+
+                } else {
+
+                    layoutParamsUp.leftMargin = 0;
+                    relativeLayout.setBackground(getContext().getResources().getDrawable(background_custom_slide_off));
+
+                    if (listener != null) {
+                        if (count == 100) {
+                            listener.onButtonOff();
+                            count = 200;
+                        }
+                    }
+                }
+
+                cardView.setLayoutParams(layoutParamsUp);
+                relativeLayout.invalidate();
+
+            }
+        });
+
+    }
+
+    public void setLockScrolling(boolean lock){
+        isLockedScrolling = lock;
+        if (lock){
+            cardView.setOnTouchListener(null);
+        }else{
+            cardView.setOnTouchListener(this);
+        }
+    }
+
+    public boolean isLockedScrolling(){
+        return isLockedScrolling;
     }
 
 }
