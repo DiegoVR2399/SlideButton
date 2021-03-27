@@ -3,6 +3,7 @@ package pe.com.example;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import slidebutton.com.pe.SlideButton;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         sb_id = findViewById(R.id.sb_id);
 
-        sb_id.OnSetListenerSlideButton(new SlideButton.setListenerSlideButton() {
+        sb_id.setOnChangeCheckedListener(new SlideButton.OnChangeCheckedListener() {
             @Override
             public void onButtonOff() {
                 Toast.makeText(MainActivity.this, "Off", Toast.LENGTH_SHORT).show();
@@ -43,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
         }else{
             sb_id.sb_setText("unlocked");
         }
+
+        sb_id.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
     }
 }

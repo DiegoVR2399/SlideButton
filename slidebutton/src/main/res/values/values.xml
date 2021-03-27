@@ -4,6 +4,7 @@
         <attr name="sb_text" format="string" />
         <attr name="sb_textColor" format="color" />
         <attr name="sb_textSize" format="dimension"/>
+        <attr name="sb_fontFamily" format="string" />
         <attr name="sb_src_desplasing" format="reference"/>
         <attr name="sb_src_end" format="reference"/>
         <attr name="sb_background_custom_slide_on" format="reference"/>

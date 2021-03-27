@@ -3,8 +3,12 @@ package slidebutton.com.pe;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Build;
+import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,7 +56,7 @@ public class SlideButton extends RelativeLayout implements View.OnTouchListener 
     private float width_height = 0;
     private float radius = 0;
 //    private boolean tint_visible=true;
-
+    private String fontFamily = "";
     //widgets
     private TextView textView;
     private ImageView imageViewCardview;
@@ -66,7 +70,7 @@ public class SlideButton extends RelativeLayout implements View.OnTouchListener 
 
     private int BTN_AVAILABILITY_WIDTH;
     private int _xDelta;
-    private setListenerSlideButton listener;
+    private OnChangeCheckedListener listener;
 
 
     public SlideButton(Context context) {
@@ -91,7 +95,8 @@ public class SlideButton extends RelativeLayout implements View.OnTouchListener 
 
             text = a.getString(R.styleable.SlideButton_sb_text);
             textColor = a.getColor(R.styleable.SlideButton_sb_textColor, DEFAULT_TEXT_COLOR);
-            textSize = a.getDimension(R.styleable.SlideButton_sb_textSize, DEFAULT_TEXT_SIZE);
+            textSize = a.getDimensionPixelSize(R.styleable.SlideButton_sb_textSize, DEFAULT_TEXT_SIZE);
+            fontFamily = a.getString(R.styleable.SlideButton_sb_fontFamily);
             imgResDesplasing = a.getResourceId(R.styleable.SlideButton_sb_src_desplasing, 0);
             imgResEnd = a.getResourceId(R.styleable.SlideButton_sb_src_end, 0);
             background_custom_slide_on = a.getResourceId(R.styleable.SlideButton_sb_background_custom_slide_on, R.drawable.background_custom_slide_on);
@@ -159,8 +164,8 @@ public class SlideButton extends RelativeLayout implements View.OnTouchListener 
         textView.setTextColor(textColor);
         textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         textView.setLayoutParams(layoutParamsTextView);
-        if (textSize != DEFAULT_TEXT_SIZE)
-            textView.setTextSize(textSize);
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize);
+        setCustomFont(context,fontFamily);
     }
 
     private void initImageViewStart(Context context) {
@@ -308,11 +313,11 @@ public class SlideButton extends RelativeLayout implements View.OnTouchListener 
         return true;
     }
 
-    public void OnSetListenerSlideButton(setListenerSlideButton listener) {
+    public void setOnChangeCheckedListener(OnChangeCheckedListener listener) {
         this.listener = listener;
     }
 
-    public interface setListenerSlideButton {
+    public interface OnChangeCheckedListener {
         void onButtonOff();
         void onButtonOn();
     }
@@ -385,4 +390,20 @@ public class SlideButton extends RelativeLayout implements View.OnTouchListener 
         return isLockedScrolling;
     }
 
+    public void setCustomFont(Context ctx, String asset) {
+
+        if (TextUtils.isEmpty(asset))
+            return;
+
+        Typeface tf;
+        Log.d("FONTS",asset);
+        try {
+            tf = Typeface.createFromAsset(ctx.getAssets(), asset);
+        } catch (Exception e) {
+            return;
+        }
+
+        textView.setTypeface(tf);
+
+    }
 }

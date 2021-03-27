@@ -19,13 +19,15 @@
         app:sb_background_tint_desplasing="@android:color/holo_orange_dark"
         app:sb_text="Desliza para continuar"
         app:sb_textColor="@android:color/background_light"
-        app:sb_textSize="3dp"
+        app:sb_textSize="15dp"
         app:sb_radius_card="17dp"
         app:sb_width_height_card="34dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
+        android:fontFamily="@font/akrobatblack"
+        android:textSize="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
